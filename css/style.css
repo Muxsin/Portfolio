@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light-mode {
+    filter: invert(1);
+}
+
+.light-mode #underline,
+.light-mode #Layer_1,
+.light-mode #cursor-follower1,
+.light-mode #cursor-follower2,
+.light-mode #right-side img{
+    filter: invert(1);
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #111;
+    color: #f3f3f3;
+    height: 100%;
+    cursor: none!important;
+}
+
+#logo {
+    width: 100px;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+}
+
+#hello-bar h1 {
+    position: relative;
+    font-size: 510px;
+    color: rgba(255, 255, 255, .1);
+    font-weight: 700;
+    line-height: 100%;
+}
+
+#about h2 {
+    position: relative;
+    top: -150px;
+    left: -24px;
+    line-height: 62px;
+    font-size: 50px;
+}
+
+#underline {
+    position: relative;
+    left: -10px;
+    display: block;
+    width: 300px;
+}
+
+nav {
+    padding: 64px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+nav li {
+    display: block;
+}
+
+#cursor-follower1 {
+    border: .1px solid rgba(255, 0, 0, .3);
+    padding: 16px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .1s ease;
+}
+
+li:hover < #cursor-follower1 {
+    background-color: red;
+}
+
+#cursor-follower2 {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid red;
+    z-index: -1;
+}
+
+#about-bar {
+    display: flex;
+    margin: 5% 10% 5% 10%;
+}
+
+#about-bar #left-side {
+    display: flex;
+    padding-right: 20%;
+}
+
+#about-bar #left-side div{
+    margin: auto;
+    padding: 10px;
+}
+
+#about-bar #left-side h1 {
+    font-size: 60px;
+}
+
+#about-bar #left-side p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .6);
+}
+
+#about-bar #right-side {
+    display: flex;
+}
+
+#about-bar #right-side img{
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(100, 100, 100, 0.4);
+}
+
+#Layer_1 {
+    position: relative;
+    top: -200px;
+    left: 700px;
+    width: 200px;
+    fill: red;
+}
+
+#my-work {
+    margin: 5% 20% 5% 20%;
+}
+
+#my-work #blocks {
+    display: flex;
+    margin: 3%;
+}
+
+#my-work #blocks h2 {
+    color: rgba(255, 255, 255, .6);
+}
+
+#my-work #blocks p, summary {
+    font-size: 20px;
+    line-height: 2;
+}
+
+#my-work #blocks #left-side {
+    width: 30%;
+    padding-right: 20px;
+}
+
+#my-work #blocks #left-side div{
+    display: flex;
+}
+
+#my-work #blocks #right-side {
+    width: 70%;
+    
+}
+
+#my-work #blocks #right-side hr {
+    margin-top: 20px;
+}
